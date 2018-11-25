@@ -7,17 +7,88 @@
   <body>
     <header class="header">
       <a class="header-logo" href="index.html">
-          <img src="img/logo.svg" alt="Логотип Глейси">
+          <img src="img/logo.svg" width="154px" height="64px" alt="Логотип Глейси">
       </a>
       <nav class="navigation">
         <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
+          <li class="site-navigation-current">
+            <a href="catalog.html">Каталог</a>
+            <section class="modal modal-main-menu">
+                <ul>
+                  <li><a class="main-menu-item" href="#">Новинки</a></li>
+                  <li><a class="main-menu-item" href="catalog.html">Сливочное</a></li>
+                  <li><a class="main-menu-item" href="#">Щербеты</a></li>
+                  <li><a class="main-menu-item" href="#">Фруктовый лед</a></li>
+                  <li><a class="main-menu-item" href="#">Мелорин</a></li>
+                </ul>
+              </section>
+          </li>
           <li><a href="delivery&payment.html">Доставка и оплата</a></li>
           <li><a href="about.html">О Компании</a></li>
         </ul>
-        <!-- Форма поиска -->
+        <a class="search-link" href="#">Поиск</a>
+        <section class="modal modal-search">
+          <h2 class="visually-hidden">Поиск</h2>
+          <form action="#" method="post">
+            <input class="search-field" type="search" name="request" placeholder="Что ищем?" aria-label="Поиск">
+            <button class="visually-hidden" type="submit">Найти</button>
+          </form>
+        </section>
         <!-- Форма входа -->
+        <a class="login-link" href="#">Вход</a>
+        <section class="modal modal-login">
+          <h2 class="visually-hidden">Личный кабинет</h2>
+          <form action="#" method="post">
+            <input class="login-field" type="text" name="login" placeholder="Электронная почта" aria-label="Логин">
+            <input class="password-field" type="password" name="password" placeholder="Пароль" aria-label="Пароль">
+            <button class="button" type="submit">Войти</button>
+            <a class="restore" href="#">Забыли пароль?</a>
+            <a class="registration" href="#">Новая регистрация</a>
+          </form>
+        </section>
         <!-- Форма корзины -->
+        <a class="cart" href="#" aria-label="Корзина">2 товара</a>
+        <section class="modal modal-cart">
+          <h2 class="visually-hidden">Корзина</h2>
+          <ul class="cart-list">
+            <li class="cart-item">
+              <a href="#">
+                <img src="img/product-1.jpg"  width="33px" height="33px" alt="Пломбир с апельсиновым джемом">
+              </a>
+              <h3>
+                <a href="#">Пломбир с апельсиновым джемом</a>
+              </h3>
+              <p class="order">
+                1,5 кг х <span class="price">200 руб.</span>
+              </p>
+              <p class="cost">
+                300 руб.
+              </p>
+              <button class="button" type="button">Удалить</button>
+            </li>
+            <li class="cart-item">
+                <a href="#">
+                  <img src="img/product-3.jpg"  width="33px" height="33px" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                </a>
+                <h3>
+                  <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                </h3>
+                <p class="order">
+                  1,5 кг х <span class="price">300 руб.</span>
+                </p>
+                <p class="cost">
+                  450 руб.
+                </p>
+                <button class="button" type="button">Удалить</button>
+              </li>
+          </ul>
+          <p class="total-cost">
+            Итого: 750 руб.
+          </p>
+          <form action="#" method="get">
+            <button class="button" type="submit">Оформить заказ</button> <!--Не до конца понял, как оно должно работать, пока сделал так, если что исправлю-->
+          </form>
+        </section>
       </nav>
       <p class="schedule">С 10 до 20, ежедневно</p>
       <p class="phone">8 812 450-25-25</p>
@@ -26,7 +97,7 @@
     <main class="content">
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li> <!-- Не понял по ТЗ, какая должна быть здесь ссылка, так как нет отдельной страницы каталога, только "Сливочное".-->
+        <li><a href="#">Каталог</a></li>
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
 
@@ -43,7 +114,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-1.jpg" width="267px" height="267px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </a>
             </div>
             <p class="catalog-item-price">
@@ -59,7 +130,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+                <img src="img/product-2.jpg" width="267px" height="267px" alt="Сливочно-кофейное с кусочками шоколада">
               </a>
             </div>
             <p class="catalog-item-price">
@@ -75,7 +146,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img/product-3.jpg" width="267px" height="267px" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </a>
             </div>
             <p class="catalog-item-price">
@@ -91,7 +162,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img/product-4.jpg" width="267px" height="267px" alt="Сливочное крем-брюле с карамельной подливкой">
               </a>
             </div>
             <p class="catalog-item-price">
@@ -107,7 +178,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-5.jpg" alt="Сливочное с брусничным джемом">
+                <img src="img/product-5.jpg" width="267px" height="267px" alt="Сливочное с брусничным джемом">
               </a>
             </div>
             <p class="catalog-item-price">
@@ -123,7 +194,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-6.jpg" alt="Сливочно-черничное с цельными ягодами черники">
+                <img src="img/product-6.jpg" width="267px" height="267px" alt="Сливочно-черничное с цельными ягодами черники">
               </a>
             </div>
             <p class="catalog-item-price">
@@ -139,7 +210,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-7.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
+                <img src="img/product-7.jpg" width="267px" height="267px" alt="Сливочно-лимонное с карамельной присыпкой">
               </a>
             </div>
             <p class="catalog-item-price">
@@ -155,7 +226,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-8.jpg" alt="Сливочное с шоколадной стружкой">
+                <img src="img/product-8.jpg" width="267px" height="267px" alt="Сливочное с шоколадной стружкой">
               </a>
             </div>
             <p class="catalog-item-price">
@@ -171,7 +242,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-9.jpg" alt="Сливочно-ванильное с кусочками шоколада">
+                <img src="img/product-9.jpg" width="267px" height="267px" alt="Сливочно-ванильное с кусочками шоколада">
               </a>
             </div>
             <p class="catalog-item-price">
@@ -187,7 +258,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-10.jpg" alt="Сливочное с ментоловым сиропом">
+                <img src="img/product-10.jpg" width="267px" height="267px" alt="Сливочное с ментоловым сиропом">
               </a>
             </div>
             <p class="catalog-item-price">
@@ -203,7 +274,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-11.jpg" alt="Сливочное с кусочками черного шоколада">
+                <img src="img/product-11.jpg" width="267px" height="267px" alt="Сливочное с кусочками черного шоколада">
               </a>
             </div>
             <p class="catalog-item-price">
@@ -219,7 +290,7 @@
             </h3>
             <div class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/product-12.jpg" alt="Сливочное с мятным сиропом">
+                <img src="img/product-12.jpg" width="267px" height="267px" alt="Сливочное с мятным сиропом">
               </a>
             </div>
             <p class="catalog-item-price">
