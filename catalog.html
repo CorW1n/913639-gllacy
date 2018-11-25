@@ -13,30 +13,28 @@
         <ul class="site-navigation">
           <li class="site-navigation-current">
             <a href="catalog.html">Каталог</a>
-            <section class="modal modal-main-menu">
-                <ul>
-                  <li><a class="main-menu-item" href="#">Новинки</a></li>
-                  <li><a class="main-menu-item" href="catalog.html">Сливочное</a></li>
-                  <li><a class="main-menu-item" href="#">Щербеты</a></li>
-                  <li><a class="main-menu-item" href="#">Фруктовый лед</a></li>
-                  <li><a class="main-menu-item" href="#">Мелорин</a></li>
-                </ul>
-              </section>
+            <ul class="modal modal-main-menu">
+              <li><a class="main-menu-item" href="#">Новинки</a></li>
+              <li><a class="main-menu-item" href="catalog.html">Сливочное</a></li>
+              <li><a class="main-menu-item" href="#">Щербеты</a></li>
+              <li><a class="main-menu-item" href="#">Фруктовый лед</a></li>
+              <li><a class="main-menu-item" href="#">Мелорин</a></li>
+            </ul>
           </li>
           <li><a href="delivery&payment.html">Доставка и оплата</a></li>
           <li><a href="about.html">О Компании</a></li>
         </ul>
         <a class="search-link" href="#">Поиск</a>
-        <section class="modal modal-search">
+        <div class="modal modal-search">
           <h2 class="visually-hidden">Поиск</h2>
-          <form action="#" method="post">
+          <form action="#" method="get">
             <input class="search-field" type="search" name="request" placeholder="Что ищем?" aria-label="Поиск">
             <button class="visually-hidden" type="submit">Найти</button>
           </form>
-        </section>
+        </div>
         <!-- Форма входа -->
         <a class="login-link" href="#">Вход</a>
-        <section class="modal modal-login">
+        <div class="modal modal-login">
           <h2 class="visually-hidden">Личный кабинет</h2>
           <form action="#" method="post">
             <input class="login-field" type="text" name="login" placeholder="Электронная почта" aria-label="Логин">
@@ -45,10 +43,10 @@
             <a class="restore" href="#">Забыли пароль?</a>
             <a class="registration" href="#">Новая регистрация</a>
           </form>
-        </section>
+        </div>
         <!-- Форма корзины -->
         <a class="cart" href="#" aria-label="Корзина">2 товара</a>
-        <section class="modal modal-cart">
+        <div class="modal modal-cart">
           <h2 class="visually-hidden">Корзина</h2>
           <ul class="cart-list">
             <li class="cart-item">
@@ -88,7 +86,7 @@
           <form action="#" method="get">
             <button class="button" type="submit">Оформить заказ</button> <!--Не до конца понял, как оно должно работать, пока сделал так, если что исправлю-->
           </form>
-        </section>
+        </div>
       </nav>
       <p class="schedule">С 10 до 20, ежедневно</p>
       <p class="phone">8 812 450-25-25</p>
