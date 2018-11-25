@@ -11,13 +11,43 @@
       </a>
       <nav class="navigation">
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+            <section class="modal modal-main-menu">
+              <ul>
+                <li><a class="main-menu-item" href="#">Новинки</a></li>
+                <li><a class="main-menu-item" href="catalog.html">Сливочное</a></li>
+                <li><a class="main-menu-item" href="#">Щербеты</a></li>
+                <li><a class="main-menu-item" href="#">Фруктовый лед</a></li>
+                <li><a class="main-menu-item" href="#">Мелорин</a></li>
+              </ul>
+            </section>
+          </li>
           <li><a href="delivery&payment.html">Доставка и оплата</a></li>
           <li><a href="about.html">О Компании</a></li>
         </ul>
-        <!-- Форма поиска -->
+        <a class="search-link" href="#">Поиск</a>
+        <section class="modal modal-search">
+          <h2 class="visually-hidden">Поиск</h2>
+          <form action="#" method="post">
+            <input class="search-field" type="search" placeholder="Что ищем?" aria-label="Поиск">
+            <button class="visually-hidden" type="submit">Найти</button>
+          </form>
+        </section>
         <!-- Форма входа -->
+        <a class="login-link" href="#">Вход</a>
+        <section class="modal modal-login">
+          <h2 class="visually-hidden">Личный кабинет</h2>
+          <form action="#" method="post">
+            <input class="login-field" id="user-login" type="text" name="login" placeholder="Электронная почта" aria-label="Логин">
+            <input class="password-field" id="user-password" type="password" name="password" placeholder="Пароль" aria-label="Пароль">
+            <button class="button" type="submit">Войти</button>
+            <a class="restore" href="#">Забыли пароль?</a>
+            <a class="registration" href="#">Новая регистрация</a>
+          </form>
+        </section>
         <!-- Форма корзины -->
+        <a class="cart" href="#" aria-label="Корзина">Пусто</a>
       </nav>
       <p class="schedule">С 10 до 20, ежедневно</p>
       <p class="phone">8 812 450-25-25</p>
