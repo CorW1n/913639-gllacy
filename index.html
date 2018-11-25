@@ -30,7 +30,7 @@
         <section class="modal modal-search">
           <h2 class="visually-hidden">Поиск</h2>
           <form action="#" method="post">
-            <input class="search-field" type="search" placeholder="Что ищем?" aria-label="Поиск">
+            <input class="search-field" type="search" name="request" placeholder="Что ищем?" aria-label="Поиск">
             <button class="visually-hidden" type="submit">Найти</button>
           </form>
         </section>
@@ -39,8 +39,8 @@
         <section class="modal modal-login">
           <h2 class="visually-hidden">Личный кабинет</h2>
           <form action="#" method="post">
-            <input class="login-field" id="user-login" type="text" name="login" placeholder="Электронная почта" aria-label="Логин">
-            <input class="password-field" id="user-password" type="password" name="password" placeholder="Пароль" aria-label="Пароль">
+            <input class="login-field" type="text" name="login" placeholder="Электронная почта" aria-label="Логин">
+            <input class="password-field" type="password" name="password" placeholder="Пароль" aria-label="Пароль">
             <button class="button" type="submit">Войти</button>
             <a class="restore" href="#">Забыли пароль?</a>
             <a class="registration" href="#">Новая регистрация</a>
@@ -76,8 +76,17 @@
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
         <form action="#" method="post">
-          <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
-          <input type="email" id="subscribe-email" placeholder="Электронная почта">
+          <input class="subscribe-email" type="email" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="modal modal-feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <p>Мы обязательно вам ответим!</p>
+        <form action="#" method="post">
+          <input class="feedback-name-field" type="text" name="name" placeholder="Как вас зовут?" aria-label="Ваше имя">
+          <input class="feedback-email-field" type="email" name="email" placeholder="Ваша почта для ответа?" aria-label="Ваша почта для ответа">
+          <textarea class="feedback-message" name="message" cols="40" rows="10" placeholder="Напишите что-нибудь..." aria-label="Ваше сообщение"></textarea>
           <button class="button" type="submit">Отправить</button>
         </form>
       </section>
