@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -11,7 +14,7 @@
       </a>
       <nav class="navigation">
         <ul class="site-navigation">
-          <li>
+          <li class="site-navigation-item">
             <a href="catalog.html">Каталог</a>
             <ul class="modal modal-main-menu">
               <li><a class="main-menu-item" href="#">Новинки</a></li>
@@ -21,10 +24,10 @@
               <li><a class="main-menu-item" href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="delivery&payment.html">Доставка и оплата</a></li>
-          <li><a href="about.html">О Компании</a></li>
+          <li class="site-navigation-item"><a href="delivery&payment.html">Доставка и оплата</a></li>
+          <li class="site-navigation-item"><a href="about.html">О Компании</a></li>
         </ul>
-        <a class="search-link" href="#">Поиск</a>
+        <a class="search-link visually-hidden" href="#">Поиск</a>
         <div class="modal modal-search">
           <h2 class="visually-hidden">Поиск</h2>
           <form action="#" method="get">
