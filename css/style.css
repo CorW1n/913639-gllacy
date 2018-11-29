@@ -31,37 +31,11 @@ a {
   font-weight: bold;
 }
 
-.site-navigation-item:nth-child(1) a::after {
-  content: "";
-
-  display: block;
-  height: 1px;
-  width: 60px;
-  margin: -1px 0 0 1px;
-
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.site-navigation-item:nth-child(2) a::after {
-  content: "";
-
-  display: block;
-  height: 1px;
-  width: 142px;
-  margin: -1px 0 0 1px;
-
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.site-navigation-item:nth-child(3) a::after {
-  content: "";
-
-  display: block;
-  height: 1px;
-  width: 90px;
-  margin: -1px 0 0 1px;
-
-  background-color: rgba(255, 255, 255, 0.2);
+.site-navigation-item a {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  background-position: 0 18px;
+  background-repeat: repeat-x;
+  background-size: 2px 1px;
 }
 
 .site-navigation-item a:hover,
@@ -75,12 +49,6 @@ a {
   color: #323232;
 
   background-color: #ededed;
-}
-
-.site-navigation-item a:hover::after,
-.site-navigation-item a:active::after,
-.site-navigation-item a:focus::after {
-  display: none;
 }
 
 .login-link,
@@ -124,4 +92,194 @@ a {
   color: #ffffff;
 
   background-color: #849d8f;
+}
+
+.features {
+  background-color: #eadbbd;
+  background-image: url(img\bg-wafer.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.features-list {
+  list-style-type: none;
+}
+
+.features h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+/* Не понимаю, почему картинки не подгружаются =( */
+.blog-news {
+  background-color: #ffffff;
+  background-image: url(img\bg-blog.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.blog-news h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.blog-news a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
+
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, rgba(50, 50, 50), rgba(50, 50, 50));
+  background-position: 0 24px;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+}
+
+.blog-news a:hover,
+.blog-news a:focus,
+.blog-news a:active {
+  color: #e84d37;
+
+  background-image: linear-gradient(to right, #e84d37, #e84d37);
+  background-position: 0 24px;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+}
+
+.subscribe {
+  background-image: url(img\bg-post.svg);
+}
+
+.subscribe .wrapper {
+  background-color: #f8f7f4;
+}
+
+.subscribe input {
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.subscribe input:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.subscribe input:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.subscribe input::placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+
+  /* box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64); */
+  background-color: #e84d37;
+  background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
+  border: none;
+}
+/* Градиент не меняется =(*/
+.button:hover,
+.button:focus {
+  /* box-shadow: 0 2px 2px #ac1000; */
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
+}
+
+.footer-social ul,
+.footer-navigation {
+  list-style-type: none;
+}
+
+.footer-navigation a{
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus,
+.footer-navigation a:active {
+  color: #ffbc9e;
+}
+
+.for-suppliers a{
+  font-weight: 700;
+}
+
+.footer-navigation-item a::after {
+  content: "";
+
+  display: block;
+  height: 1px;
+  width: 110px;
+  margin: -3px 0 0 1px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-navigation-item:nth-child(2) a::after {
+  width: 99px;
+  margin: -3px 0 0 1px;
+}
+
+.footer-navigation-item:nth-child(3) a::after {
+  width: 105px;
+  margin: -3px 0 0 1px;
+}
+
+.footer-navigation-item:nth-child(4) a::after {
+  width: 161px;
+  margin: -3px 0 0 1px;
+}
+
+.footer-navigation a:hover::after,
+.footer-navigation a:focus::after,
+.footer-navigation a:active::after {
+  background-color: rgba(255, 188, 158, 0.2);
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+  color: #fefefe;
+}
+
+.footer-copyright a:nth-child(2) {
+  color: #fefefe;
+}
+
+.footer-copyright a:nth-child(2):hover,
+.footer-copyright a:nth-child(2):focus,
+.footer-copyright a:nth-child(2):active {
+  color: #ffbc9e;
+}
+/* Надо будет с позиционированием возиться или как вообще? */
+.footer-copyright a:nth-child(2)::after {
+  content: "";
+
+  display: inline-block;
+  height: 1px;
+  width: 85px;
+  margin: -3px 0 0 1px;
+
+  background-color: rgba(254, 254, 254, 0.2);
+}
+
+.footer-copyright a:nth-child(2):hover::after,
+.footer-copyright a:nth-child(2):focus::after,
+.footer-copyright a:nth-child(2):active::after {
+  background-color: rgba(255, 188, 158, 0.2);
 }
