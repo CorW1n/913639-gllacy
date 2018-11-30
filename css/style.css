@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 27px;
+  padding: 9px 27px 0;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -54,6 +54,20 @@ a {
   background-color: #ededed;
 }
 
+.site-navigation-current a {
+  background-color: #d07058;
+  background-image: none;
+}
+
+.site-navigation-current a:hover,
+.site-navigation-current a:focus,
+.site-navigation-current a:active {
+  color: #ffffff;
+
+  background-color: #d07058;
+  background-image: none;
+}
+
 .login-link,
 .cart {
   font-size: 14px;
@@ -71,6 +85,13 @@ a {
   color: #323232;
 
   background-color: #f8f7f4;
+}
+
+.not-empty-cart {
+  color: #323232;
+
+  background-color: #f8f7f4;
+  opacity: 0.99;
 }
 
 .schedule {
@@ -181,6 +202,96 @@ a {
   color: #999999;
 }
 
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  background-position: 0 16px;
+  background-repeat: repeat-x;
+  background-size: 2px 1px;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: rgb(255, 188, 158);
+
+  background-image: linear-gradient(to right, rgba(255, 188, 158, 0.2), rgba(255, 188, 158, 0.2));
+}
+
+.breadcrumbs-current {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.catalog-item-name a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  background-position: 0 18px;
+  background-repeat: repeat-x;
+  background-size: 2px 1px;
+}
+
+.catalog-item-name a:hover,
+.catalog-item-name a:focus,
+.catalog-item-name a:active {
+  color: rgb(255, 188, 158);
+
+  background-image: linear-gradient(to right, rgba(255, 188, 158, 0.2), rgba(255, 188, 158, 0.2));
+}
+
+.catalog-item-image img {
+  border-radius: 133px;
+}
+
+.catalog-item-price {
+  line-height: 45px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+  color: #ffffff;
+}
+
+.catalog-item-price b {
+  font-size: 45px;
+}
+
+.catalog-item-price .weight {
+  font-size: 30px;
+}
+
 .button {
   font: inherit;
 
@@ -216,32 +327,26 @@ a {
   list-style-type: none;
 }
 
-.footer-navigation a{
+.footer-navigation a {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-}
 
-.footer-navigation a:hover,
-.footer-navigation a:focus,
-.footer-navigation a:active {
-  color: rgb(255, 188, 158);
-}
-
-.for-suppliers a{
-  font-weight: 700;
-}
-
-.footer-navigation-item a {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   background-position: 0 14px;
   background-repeat: repeat-x;
   background-size: 2px 1px;
 }
 
+.for-suppliers a{
+  font-weight: 700;
+}
+
 .footer-navigation a:hover,
 .footer-navigation a:focus,
 .footer-navigation a:active {
+  color: rgb(255, 188, 158);
+
   background-image: linear-gradient(to right, rgba(255, 188, 158, 0.2), rgba(255, 188, 158, 0.2));
 }
 
