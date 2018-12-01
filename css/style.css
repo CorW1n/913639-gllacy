@@ -19,7 +19,8 @@ body {
   list-style: none;
 }
 
-.modal {
+.modal,
+.sub-menu {
   display: none;
 }
 
