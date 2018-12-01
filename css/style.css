@@ -11,8 +11,8 @@ body {
   background-color: #849d8f;
 }
 
-.site-navigation,
-.modal-main-menu {
+.menu,
+.modal-sub-menu {
   padding: 0;
   margin: 0;
 
@@ -28,40 +28,40 @@ a {
   color: #ffffff;
 }
 
-.site-navigation-item {
+.menu-item {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
 }
 
-.site-navigation-item a {
+.menu-item a {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   background-position: 0 18px;
   background-repeat: repeat-x;
   background-size: 2px 1px;
 }
 
-.site-navigation-item a:hover,
-.site-navigation-item a:focus {
+.menu-item a:hover,
+.menu-item a:focus {
   color: #323232;
 
   background-color: #f7f6f3;
 }
 
-.site-navigation-item a:active {
+.menu-item a:active {
   color: #323232;
 
   background-color: #ededed;
 }
 
-.site-navigation-current a {
+.menu-current a {
   background-color: #d07058;
   background-image: none;
 }
 
-.site-navigation-current a:hover,
-.site-navigation-current a:focus,
-.site-navigation-current a:active {
+.menu-current a:hover,
+.menu-current a:focus,
+.menu-current a:active {
   color: #ffffff;
 
   background-color: #d07058;
@@ -338,7 +338,7 @@ a {
   background-size: 2px 1px;
 }
 
-.for-suppliers a{
+.footer-navigation-item:first-child a{
   font-weight: 700;
 }
 
