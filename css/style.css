@@ -29,6 +29,24 @@ a {
   color: #ffffff;
 }
 
+.container {
+  width: 1146px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  width: 992px;
+}
+
+.search-link {
+  margin-left: auto;
+}
+
 .menu-item {
   font-size: 16px;
   line-height: 18px;
