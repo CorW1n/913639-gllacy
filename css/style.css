@@ -138,6 +138,10 @@ a {
 }
 
 .features {
+  width: 1146px;
+  min-height: 306px;
+  margin-bottom: 40px;
+
   background-color: #eadbbd;
   background-image: url(img\bg-wafer.png);
   background-position: center center;
@@ -153,8 +157,21 @@ a {
   line-height: 30px;
   font-weight: 500;
 }
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 220px;
+  margin-bottom: 40px;
+}
+
 /* Не понимаю, почему картинки не подгружаются =( */
 .blog-news {
+  box-sizing: border-box;
+  width: 560px;
+  min-height: 220px;
+
   background-color: #ffffff;
   background-image: url(img\bg-blog.png);
   background-position: center center;
@@ -192,6 +209,10 @@ a {
 }
 
 .subscribe {
+  box-sizing: border-box;
+  width: 560px;
+   min-height: 220px; /* почему не среагировал на минимальную высоту? */
+
   background-image: url(img\bg-post.svg);
 }
 
