@@ -8,7 +8,8 @@
       <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
+      <div class="header-wrapper">
       <a class="header-logo" href="index.html">
           <img src="img/logo.svg" width="154px" height="64px" alt="Логотип Глейси">
       </a>
@@ -27,7 +28,7 @@
           <li class="menu-item"><a href="delivery&payment.html">Доставка и оплата</a></li>
           <li class="menu-item"><a href="about.html">О Компании</a></li>
         </ul>
-        <a class="search-link" href="#">Поиск</a>
+        <a class="search-link" href="#">Поиск</a><!--visually-hidden-->
         <div class="modal modal-search">
           <h2 class="visually-hidden">Поиск</h2>
           <form action="#" method="get">
@@ -89,11 +90,12 @@
           </form>
         </div>
       </nav>
+      </div>
       <p class="schedule">С 10 до 20, ежедневно</p>
       <p class="phone">8 812 450-25-25</p>
     </header>
 
-    <main class="content">
+    <main class="content container">
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
@@ -301,7 +303,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
       <div class="footer-social">
         <ul>
           <li><a class="social-button social-button-twitter" href="#">Twitter</a></li>
