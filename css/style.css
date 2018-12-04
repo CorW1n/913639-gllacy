@@ -144,9 +144,10 @@ a {
   margin-bottom: 40px;
 
   background-color: #eadbbd;
-  background-image: url(img\bg-wafer.png);
+  background-image: url(../img/bg-wafer.png);
   background-position: center center;
   background-repeat: no-repeat;
+  border-radius: 14px;
 }
 
 .features-list {
@@ -167,14 +168,14 @@ a {
   margin-bottom: 40px;
 }
 
-/* Не понимаю, почему картинки не подгружаются =( */
 .blog-news {
   box-sizing: border-box;
   width: 560px;
   min-height: 220px;
 
+  border-radius: 14px;
   background-color: #ffffff;
-  background-image: url(img\bg-blog.png);
+  background-image: url(../img/bg-blog.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -212,16 +213,31 @@ a {
 .subscribe {
   box-sizing: border-box;
   width: 560px;
-   min-height: 220px; /* почему не среагировал на минимальную высоту? */
+  min-height: 220px;
+  padding: 5px;
 
-  background-image: url(img\bg-post.svg);
+  border-radius: 14px;
+  background-image: url(../img/bg-post.svg);
 }
 
 .subscribe .wrapper {
+  min-height: 220px;
+  margin: 0;
+
+  border-radius: 10px;
   background-color: #f8f7f4;
 }
 
+.subscribe p {
+  margin: 0;
+}
+
 .subscribe input {
+  width: 368px;
+  margin: 11px;
+  padding-left: 20px;
+  border-radius: 5px;
+
   font: inherit;
   font-size: 16px;
   line-height: 24px;
@@ -231,6 +247,7 @@ a {
 }
 
 .subscribe input:hover {
+  margin: 10px;
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
@@ -380,6 +397,8 @@ a {
 .footer {
   display: flex;
   width: 1146px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer-social {
