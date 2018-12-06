@@ -19,6 +19,12 @@ body {
   list-style: none;
 }
 
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
 .modal,
 .sub-menu {
   display: none;
@@ -29,6 +35,10 @@ a {
   color: #ffffff;
 }
 
+.header-logo {
+  margin-right: 24px;
+}
+
 .container {
   width: 1146px;
   margin: 0 auto;
@@ -36,16 +46,14 @@ a {
 
 .header-wrapper {
   display: flex;
+  align-items: flex-start;
 }
 
 .navigation {
   display: flex;
+  align-items: flex-start;
+  padding-top: 13px;
   width: 992px;
-}
-
-/* Заменим на декоративный псевдоэлемент */
-.search-link {
-  margin-left: auto;
 }
 
 .menu-item {
@@ -55,23 +63,36 @@ a {
 }
 
 .menu-item a {
+  display: block;
+  padding: 7px 0;
+  margin-right: 24px;
+
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-  background-position: 0 18px;
+  background-position: 0 24px;
   background-repeat: repeat-x;
   background-size: 2px 1px;
+
+
 }
 
 .menu-item a:hover,
 .menu-item a:focus {
+  display: block;
+  margin-right: 10px;
+  margin-left: -14px;
+  padding: 7px 14px;
+
   color: #323232;
 
   background-color: #f7f6f3;
+  border-radius: 16px;
 }
 
 .menu-item a:active {
   color: #323232;
 
   background-color: #ededed;
+  box-shadow: inset 0 2px 1px #696969;
 }
 
 .menu-current a {
@@ -88,14 +109,63 @@ a {
   background-image: none;
 }
 
+.search-link {
+  display: flex;
+  flex-shrink: 0;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 10px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.search-link:hover,
+.search-link:focus {
+  background-color: #f8f7f4;
+}
+
+.search-link:hover path,
+.search-link:focus path {
+  fill: #323232;
+}
+
 .login-link,
 .cart {
+  position: relative;
+
+  display: block;
+  padding: 8px 16px;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   color: #ffffff;
+  border-radius: 16px;
 
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.login-link {
+  margin-right: 10px;
+  padding-left: 44px;
+}
+
+.cart {
+  padding-left: 45px;
+}
+
+.login-link path {
+  fill: #ffffff;
+}
+
+.login-link svg,
+.cart svg {
+  position: absolute;
+  top: 6px;
+  left: 16px;
 }
 
 .login-link:hover,
@@ -105,6 +175,13 @@ a {
   color: #323232;
 
   background-color: #f8f7f4;
+}
+
+.login-link:hover path,
+.login-link:focus path,
+.cart:hover g,
+.cart:focus g {
+  fill: #323232;
 }
 
 .not-empty-cart {
@@ -473,13 +550,20 @@ a {
   background-image: linear-gradient(to right, rgba(255, 188, 158, 0.2), rgba(255, 188, 158, 0.2));
 }
 
-.visually-hidden {
-	position: absolute;
-	clip: rect(1px 1px 1px 1px);
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0;
-	border:0;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
