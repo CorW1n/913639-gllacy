@@ -657,6 +657,10 @@ a {
   text-align: right;
 }
 
+.modal-cart form {
+  text-align: right;
+}
+
 .order-button {
   width: 170px;
   padding-top: 10px;
@@ -949,7 +953,7 @@ a {
   top: 15%;
   left: 50%;
 
-  /* display: block; */
+  display: block;
   width: 477px;
   padding: 18px 25px 27px 24px;
   /* margin-left: -238px; */
@@ -967,6 +971,10 @@ a {
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
+}
+
+.modal-feedback .align-wrapper {
+  text-align: right;
 }
 
 .feedback-name-field {
@@ -1075,7 +1083,7 @@ a {
 
 .modal-close {
   position: absolute;
-  top: 25px;
+  top: 14px;
   right: 15px;
 
   width: 22px;
@@ -1094,7 +1102,7 @@ a {
   content: "";
 
   position: absolute;
-  top: 0px;
+  top: 11px;
   left: 0px;
 
   width: 22px;
