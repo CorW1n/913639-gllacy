@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   margin: 0;
   padding: 9px 27px 0;
 
@@ -13,6 +16,7 @@ body {
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *, *::before, *::after {
@@ -54,6 +58,11 @@ html {
 .menu {
   display: flex;
   flex-wrap: wrap;
+  margin-right: 348px;
+}
+
+.inner-page .menu {
+  margin-right: 330px;
 }
 
 .modal {
@@ -169,6 +178,7 @@ a {
 .sub-menu {
   position: absolute;
   top: 37px;
+  left: -20px;
   z-index: 10;
 
   background-color: #ffffff;
@@ -260,7 +270,6 @@ a {
   position: relative;
 
   flex-shrink: 0;
-  margin-left: auto;
   margin-right: 10px;
   padding-bottom: 5px;
 }
@@ -682,7 +691,7 @@ a {
 }
 
 .schedule {
-  margin-bottom: 0;
+  margin-bottom: 2px;
 
   font-size: 14px;
   line-height: 16px;
@@ -694,7 +703,8 @@ a {
 }
 
 .phone {
-  margin-top: 0;
+  display: block;
+  margin: 0;
 
   font-size: 22px;
   line-height: 24px;
@@ -703,6 +713,10 @@ a {
   color: #ffffff;
 
   background-color: #849d8f;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 .features {
@@ -953,7 +967,7 @@ a {
   top: 15%;
   left: 50%;
 
-  display: block;
+  /* display: block; */
   width: 477px;
   padding: 18px 25px 27px 24px;
   /* margin-left: -238px; */
@@ -1350,10 +1364,18 @@ a {
 
 .footer {
   display: flex;
-  width: 1146px;
-  padding-top: 18px;
+  flex-shrink: 0;
   padding-bottom: 24px;
+
+  /* background-color: greenyellow; */
+}
+
+.footer .container {
+  display: flex;
+  padding-top: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+  /* background-color: #d07058; */
 }
 
 .footer-social {
