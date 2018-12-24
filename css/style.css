@@ -698,8 +698,6 @@ a {
   font-weight: 700;
   text-align: right;
   color: #ffffff;
-
-  background-color: #849d8f;
 }
 
 .phone {
@@ -711,8 +709,6 @@ a {
   font-weight: 700;
   text-align: right;
   color: #ffffff;
-
-  background-color: #849d8f;
 }
 
 .content {
@@ -1209,8 +1205,6 @@ a {
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
-
-  background-color: #849d8f;
 }
 
 .page-title {
@@ -1222,8 +1216,253 @@ a {
   line-height: 41px;
   font-weight: bold;
   color: #ffffff;
+}
 
-  background-color: #849d8f;
+.filters {
+  margin-bottom: 40px;
+}
+
+.filters form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 879px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.filters legend {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.filters fieldset {
+  padding: 0;
+  margin-right: 15px;
+  border: none;
+}
+
+.filters ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.filter-option {
+  padding-left: 33px;
+  margin-right: 19px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-sort {
+  padding: 10px 0 8px 9px;
+  border: none;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+.filter-sort:hover {
+  color: #323232;
+}
+
+.range-controls {
+  position: relative;
+
+  width: 218px;
+  padding: 16px 21px;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+.range-controls .scale {
+  height: 4px;
+  width: 176px;
+  padding-left: 27px;
+
+  background-color: rgba(248, 247, 244, 0.5);
+}
+
+.range-controls .bar {
+  width: 107px;
+  height: 4px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  box-sizing: content-box;
+  position: absolute;
+  top: -8px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  top: 8px;
+  left: 43px;
+}
+
+.range-toggle-max {
+  top: 8px;
+  left: 150px;
+}
+
+.filter-fatness ul {
+  padding: 10px 0 8px 9px;
+  width: 422px;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+.filter-fillers ul {
+  padding: 10px 0 8px 15px;
+  width: 708px;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  left: -31px;
+  top: -3px;
+
+  width: 22px;
+  height: 22px;
+
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: -24px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+
+.filter-input-radio:focus + label::before,
+.filter-input-radio:hover + label::before {
+  border: 4px solid #ffffff;
+}
+
+.filter-input-radio:hover + label::after,
+.filter-input-radio:focus + label::after
+{
+  background-color: #ffffff;
+}
+
+.filter-input-radio:disabled + label::before {
+  border: 4px solid rgba(255, 255, 255, 0.4);
+}
+
+.filter-input-radio:disabled + label::after {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+
+  position: absolute;
+  left: -32px;
+  top: -5px;
+
+  width: 27px;
+  height: 27px;
+
+  background-image: url(../img/checkbox-off.svg);
+  background-position: 0px center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:hover + label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:checked + label::before {
+  background-image: url(../img/checkbox-on.svg);
+  background-position: 0px center;
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0.4;
+}
+
+
+
+.filter-button {
+  padding-top: 7px;
+  padding-right: 27px;
+  padding-bottom: 7px;
+  padding-left: 29px;
+  border: 2px solid #ffffff;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  border-radius: 18px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #323232;
+
+  background: rgb(255, 255, 255);
+  box-shadow: none;
+}
+
+.filter-button:active {
+  padding-top: 9px;
+  padding-right: 29px;
+  padding-bottom: 9px;
+  padding-left: 31px;
+  border: none;
+
+  box-shadow: inset 0px 2px 1px 0 rgb(105, 105, 105);
+  background-color: rgb(237, 237, 237);
 }
 
 .catalog-list {
@@ -1362,25 +1601,37 @@ a {
   z-index: 11;
 }
 
+.hit .catalog-item:after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url(../img/hit.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .footer {
   display: flex;
   flex-shrink: 0;
   padding-bottom: 24px;
-
-  /* background-color: greenyellow; */
 }
 
 .footer .container {
   display: flex;
   padding-top: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
-
-  /* background-color: #d07058; */
 }
 
 .footer-social {
   width: 267px;
-  margin-right: 206px;
+  margin-right: 154px;
   margin-top: 0;
   padding-top: 18px;
 }
@@ -1389,6 +1640,7 @@ a {
   width: 380px;
   padding: 0;
   margin: 0;
+  margin-right: 155px;
 }
 
 .footer-social ul,
@@ -1404,7 +1656,7 @@ a {
   width: 380px;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding-top: 17px;
+  padding-top: 13px;
 }
 
 .social-button {
@@ -1413,12 +1665,12 @@ a {
   height: 38px;
   padding: 0;
   margin: 0;
-  margin-right: 12px;
+  margin-right: 11px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   align-items: center;
   justify-content: center;
 
-  border-radius: 19px;
+  border-radius: 50%;
 }
 
 .social-button svg {
@@ -1455,7 +1707,7 @@ a {
 }
 
 .footer-navigation-item {
-  width: 138px;
+  width: 142px;
   margin: 0;
   padding: 0;
 }
@@ -1490,12 +1742,15 @@ a {
 }
 
 .footer-copyright {
-  width: 200px;
-  margin-left: auto;
+  padding: 0;
+  margin-right: 0;
 
   font-size: 12px;
-  line-height: 18px;
+  line-height: 16px;
+  font-weight: 400;
   color: #fefefe;
+
+
 }
 
 .footer-copyright p {
@@ -1506,6 +1761,9 @@ a {
 .footer-copyright > a {
   display: block;
   margin: 0;
+  padding: 0;
+  padding-left: 1px;
+  margin-bottom: 1px;
 }
 
 .copyright-ref a {
