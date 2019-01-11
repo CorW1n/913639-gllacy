@@ -917,6 +917,8 @@ a {
   font-weight: bold;
 
   border-radius: 22px;
+
+  cursor: pointer;
 }
 
 .chocolate-offer {
@@ -966,6 +968,8 @@ a {
   font-weight: bold;
 
   border-radius: 22px;
+
+  cursor: pointer;
 }
 
 .berry-offer form,
@@ -1209,6 +1213,8 @@ a {
   font-weight: bold;
 
   border-radius: 22px;
+
+  cursor: pointer;
 }
 
 .map {
@@ -1312,6 +1318,8 @@ a {
   font-weight: 700;
   line-height: 24px;
   border-radius: 22px;
+
+  cursor: pointer;
 }
 
 .modal-feedback {
@@ -1642,6 +1650,8 @@ a {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
   -webkit-appearance: none;
+
+  cursor: pointer;
 }
 
 .filter-sort:hover,
@@ -1808,6 +1818,8 @@ a {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: none;
   border-radius: 18px;
+
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -1934,6 +1946,8 @@ a {
   font-weight: 700;
 
   border-radius: 22px;
+
+  cursor: pointer;
 }
 
 .catalog-item::before {
